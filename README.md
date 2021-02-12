@@ -23,6 +23,31 @@
   DEL | Delete User | /users/me | To delete logged in user
   DEL | Delete Task | /tasks/:id | To delete particular task using task ID
   
+### JSON Structure
+  * Inbound JSON for creating a user:
+    ```
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "age": <number>                     // This is an optional field with default value of 12.
+    }
+    ```
+  * Inbound JSON for logging in a user:
+    ```
+    {
+      "email": "",
+      "password": ""
+    }
+    ```
+  * Inbound JSON for creating a task:
+    ```
+    {
+      "description": "",
+      "completed": <boolean value>        // This is an optional field with default value of false.
+    }
+    ```
+  
 ### Using the Production Version
   Download [Postman](https://www.postman.com/) or any API testing tool. Add the [URL](https://task-manager-api-using-nodejs.herokuapp.com) in the URL field and send the request.
   
