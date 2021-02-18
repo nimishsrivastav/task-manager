@@ -54,7 +54,7 @@
 ### Development in this API
   Make sure that you have Node.js installed on your system. Download the Git repository and run following commands:
   
-  * _npm init_ : To install necessary node packages.
+  * _npm install_ : To install necessary node packages.
   * _npm run dev_ : To fire up the local server.
   
   Create a _.env_ file and add below variables:
